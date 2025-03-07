@@ -4,7 +4,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movie Explorer</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-image: url('bac.jpg'); /* Use a locally saved background image */
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+    }
+
+    h1, h2 {
+      margin: 10px 0;
+    }
+
+    #movie-content {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      margin: 20px auto;
+      width: 80%;
+      border-radius: 10px;
+    }
+
+    .movie-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .movie-container {
+      width: 150px;
+      height: 150px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .movie-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    #chatbot {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      margin: 20px auto;
+      width: 80%;
+      border-radius: 10px;
+    }
+
+    #chat-window {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    #user-input {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background: #ff5733;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #e74c3c;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -14,7 +105,18 @@
 
   <section id="movie-content">
     <h2>Featured Movies</h2>
-    <div id="movie-list" class="movie-list"></div>
+    <div id="movie-list" class="movie-list">
+      <div class="movie-container"><img src="after.jpg" alt="Inception"></div>
+      <div class="movie-container"><img src="arch.jpg" alt="Interstellar"></div>
+      <div class="movie-container"><img src="inter.jpg" alt="The Dark Knight"></div>
+      <div class="movie-container"><img src="joker.jpg" alt="Avengers: Endgame"></div>
+      <div class="movie-container"><img src="lagaan.jpg" alt="Joker"></div>
+      <div class="movie-container"><img src="pathn.jpg" alt="Titanic"></div>
+      <div class="movie-container"><img src="se.jpg" alt="Harry Potter"></div>
+      <div class="movie-container"><img src="wond.jpg" alt="Spider-Man: No Way Home"></div>
+      <div class="movie-container"><img src="smile.jpg" alt="Shutter Island"></div>
+      <div class="movie-container"><img src="mas.jpg" alt="The Shawshank Redemption"></div>
+    </div>
   </section>
 
   <section id="chatbot">
